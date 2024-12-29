@@ -11,7 +11,7 @@ API_ENDPOINTS = [
     # Add other endpoints here
 ]
 
-PASSWORD = "your_password"  # Replace with the same password used in your frontend login
+PASSWORD = "NOBODY733"  # Replace with the same password used in your frontend login
 
 @app.route('/trigger', methods=['POST'])
 def trigger():
